@@ -4,14 +4,11 @@ pipeline {
          maven 'maven'
          jdk 'java'
     }
-    stages {
         stage('Stage : code scaning') { 
             steps {
                 sh 'mvn sonar:sonar'
             }
         }
-
-    stages {
         stage('Stage : Clean') { 
             steps {
                 sh 'mvn clean'
@@ -47,5 +44,5 @@ pipeline {
                 sh 'mvn install'
             }
         }
-    }
 }
+
