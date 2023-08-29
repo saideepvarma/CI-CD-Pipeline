@@ -5,44 +5,44 @@ pipeline {
          jdk 'java'
     }
     stages {
-        stage('Stage-1 : code scaning') { 
+        stage('Stage : code scaning') { 
             steps {
                 sh 'mvn sonar:sonar'
             }
         }
 
     stages {
-        stage('Stage-1 : Clean') { 
+        stage('Stage : Clean') { 
             steps {
                 sh 'mvn clean'
             }
         }
-         stage('Stage-2 : Validate') { 
+         stage('Stage : Validate') { 
             steps {
                 sh 'mvn validate'
             }
         }
-         stage('Stage-3 : Compile') { 
+         stage('Stage : Compile') { 
             steps {
                 sh 'mvn compile'
             }
         }
-         stage('Stage-4 : Test') { 
+         stage('Stage : Test') { 
             steps {
                 sh 'mvn test'
             }
         }
-          stage('Stage-5 : Package') { 
+          stage('Stage : Package') { 
             steps {
                 sh 'mvn package'
             }
         }
-          stage('Stage-6 : Verify') { 
+          stage('Stage : Verify') { 
             steps {
                 sh 'mvn verify'
             }
         }
-          stage('Stage-7 : install') { 
+          stage('Stage : install') { 
             steps {
                 sh 'mvn install'
             }
