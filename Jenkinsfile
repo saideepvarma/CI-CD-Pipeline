@@ -4,45 +4,48 @@ pipeline {
          maven 'maven'
          jdk 'java'
     }
-        stage('Stage : code scaning') { 
+    stages {
+        stage('Stage-0 : code scaning') { 
             steps {
                 sh 'mvn sonar:sonar'
             }
         }
-        stage('Stage : Clean') { 
+        stage('Stage-1 : Clean') { 
             steps {
                 sh 'mvn clean'
             }
         }
-         stage('Stage : Validate') { 
+         stage('Stage-2 : Validate') { 
             steps {
                 sh 'mvn validate'
             }
         }
-         stage('Stage : Compile') { 
+         stage('Stage-3 : Compile') { 
             steps {
                 sh 'mvn compile'
             }
         }
-         stage('Stage : Test') { 
+         stage('Stage-4 : Test') { 
             steps {
                 sh 'mvn test'
             }
         }
-          stage('Stage : Package') { 
+          stage('Stage-5 : Package') { 
             steps {
                 sh 'mvn package'
             }
         }
-          stage('Stage : Verify') { 
+          stage('Stag-6 : Verify') { 
             steps {
                 sh 'mvn verify'
             }
         }
-          stage('Stage : install') { 
+          stage('Stag-7 : install') { 
             steps {
                 sh 'mvn install'
             }
         }
+    }   
 }
+    
 
