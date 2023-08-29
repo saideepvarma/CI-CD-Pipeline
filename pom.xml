@@ -15,7 +15,7 @@
     
         <sonar.host.url>http://54.236.30.54:9000</sonar.host.url>
         <sonar.organization>cb8am</sonar.organization>
-        <sonar.projectKey>cb8am_b69am</sonar.projectKey>
+        <sonar.projectKey>cb8am</sonar.projectKey>
         <sonar.login>sqp_9e0ab5e11f00ab16c61032fac0920d510ce0b218</sonar.login>
         
     </properties>
