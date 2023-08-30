@@ -40,7 +40,7 @@ pipeline {
                 sh 'mvn install'
             }
         }
-        stage('Stag-8: deploy') { 
+        stage('Stag-8 : deploy') { 
             steps {
                 sh 'mvn deploy'
             }
