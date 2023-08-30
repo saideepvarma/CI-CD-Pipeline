@@ -30,17 +30,17 @@ pipeline {
                 sh 'mvn package'
             }
         }
-          stage('Stag-6 : Verify') { 
+          stage('Stage-6 : Verify') { 
             steps {
                 sh 'mvn verify'
             }
         }
-          stage('Stag-7 : install') { 
+          stage('Stage-7 : install') { 
             steps {
                 sh 'mvn install'
             }
         }
-        stage('Stag-8 : deploy') { 
+        stage('Stage-8 : deploy') { 
             steps {
                 sh 'mvn deploy'
             }
