@@ -12,11 +12,11 @@
         <junit.jupiter.version>5.2.0</junit.jupiter.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-    
-        <sonar.host.url>http://34.229.124.190:9000</sonar.host.url>
-        <sonar.organization>cbnan</sonar.organization>
-        <sonar.projectKey>cbnan</sonar.projectKey>
-        <sonar.login>sqp_2dcbfb995b4062bfd8c7ab70d435d8ea8f4f43c3</sonar.login>
+        
+        <sonar.host.url>http://3.83.147.170:9000</sonar.host.url>
+        <sonar.organization>sup</sonar.organization>
+        <sonar.projectKey>sup</sonar.projectKey>
+        <sonar.login>sqp_9ccadc70408c13a3d0eda5e13d7e0f32f6004467c</sonar.login>
         
     </properties>
 
