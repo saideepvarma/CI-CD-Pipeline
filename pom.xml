@@ -13,13 +13,18 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     
-        <sonar.host.url>http://18.234.87.168:9000</sonar.host.url>
+        <sonar.host.url>http://34.229.124.190:9000</sonar.host.url>
         <sonar.organization>cbnan</sonar.organization>
         <sonar.projectKey>cbnan</sonar.projectKey>
-        <sonar.login>sqp_3ea3a565f67405f89155110cf26c56200af63053</sonar.login>
+        <sonar.login>sqp_2dcbfb995b4062bfd8c7ab70d435d8ea8f4f43c3</sonar.login>
         
     </properties>
 
+    mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=cbnan \
+  -Dsonar.projectName='cbnan' \
+  -Dsonar.host.url=http://34.229.124.190:9000 \
+  -Dsonar.token=sqp_2dcbfb995b4062bfd8c7ab70d435d8ea8f4f43c3
     <!--
     <distributionManagement>
     <snapshotRepository>
