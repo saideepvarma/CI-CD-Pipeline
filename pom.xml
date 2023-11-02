@@ -46,9 +46,9 @@
         <id>snapshots</id>
         <name>jfrog.cloudbinary.io-snapshots</name>
         <url>http://54.242.102.123:8081/artifactory/libs-snapshot</url>
-    </snapshotRepository
-
-</distributionManagement>    
+    </snapshotRepository>
+    
+</distributionManagement>   
     
     <dependencies>
         <dependency>
