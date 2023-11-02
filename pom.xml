@@ -36,18 +36,17 @@
     -->
   
 <distributionManagement>
-    
     <repository>
-        <id>release</id>
+        <id>central</id>
         <name>jfrog.cloudbinary.io-releases</name>
-        <url>http://100.26.56.180:8081/artifactory/libs-release-local</url>
+        <url>http://54.242.102.123:8081/artifactory/libs-release</url>
     </repository>
 
     <snapshotRepository>
         <id>snapshots</id>
         <name>jfrog.cloudbinary.io-snapshots</name>
-        <url>http://100.26.56.180:8081/artifactory/libs-snapshot-local</url>
-    </snapshotRepository>
+        <url>http://54.242.102.123:8081/artifactory/libs-snapshot</url>
+    </snapshotRepository
 
 </distributionManagement>    
     
