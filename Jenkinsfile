@@ -25,7 +25,4 @@ node {
   stage ('Package') {
       sh "'${mvnHome}/bin/mvn' package"
   }
-  stage ('Deploy') {
-      sh "'${mvnHome}/bin/mvn' deploy"
-  }
 }
